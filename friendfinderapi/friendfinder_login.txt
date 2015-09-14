@@ -1,0 +1,40 @@
+For the Friend Finder App, a custom login was designed and coded into the App.
+
+It uses the Friend Finder Google App Engine API.
+
+Specifically, two new API calls were created, login and logout.
+
+login
+
+PUT http://localhost:8080/_ah/api/friendfinderapi/v1/user/login/login/{id, user_cname, user_cpassword"}
+
+example:
+
+curl --header "Content-Type: application/json" -X PUT -d '{"id": "1", "user_cname": "tom", "user_cpassword": "tom"}'  http://localhost:8080/_ah/api/friendfinderapi/v1/login/login
+
+logout
+
+PUT http://localhost:8080/_ah/api/friendfinderapi/v1/user/login/logout/{id}
+
+example:
+
+curl --header "Content-Type: application/json" -X PUT -d '{"id": "1"}'  http://localhost:8080/_ah/api/friendfinderapi/v1/login/logout
+
+These two functions uses the Google App Engines NDB datastore with the following table.
+
+# Class Name: Login
+# Description: This class describes if any User is Logged in to the datastore
+
+class Login(EndpointsModel):
+  _message_fields_schema = ('id', 'user_cname', 'user_cpassword', 'user_login_id', 'user_logged_in')
+
+  # id field is defined in the base ndb.Model
+  user_cname = ndb.StringProperty()
+  user_cpassword = ndb.StringProperty()
+  user_login_id = ndb.IntegerProperty()
+  user_logged_in = ndb.IntegerProperty()
+
+It stores the current user and current password of the user.
+It also stores the current user NDB database id and whether the user is logged in or not.
+
+

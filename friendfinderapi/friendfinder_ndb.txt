@@ -1,0 +1,56 @@
+The Friend Finder API has the following NDB datastore Entities defined.
+
+Friend
+	This is a list of friends that are in the database.
+	It has a user_id field that links a friend to a specific user.
+User
+	This is the individual users of the Friend Finder application.
+Login
+	This is used by the Friend Finder application to keep track of which user
+	is logged in or not.
+
+One User to Many Friends
+One Friend to One User
+One Login to One User Per Running of the Friend Finder App.
+
+The following is the actual implementation of the tables.
+
+# Class Name: Friend
+# Description:  This class describes the Friend in the friend datastore
+
+class Friend(EndpointsModel):
+  _message_fields_schema = ('id', 'email', 'name', 'address', 'phone_number', 'user_id', 'signup_time')
+
+  # id field is defined in the base ndb.Model 
+  email = ndb.StringProperty()
+  name = ndb.StringProperty()
+  address = ndb.StringProperty()
+  phone_number = ndb.StringProperty()
+  # user_id is the user this friend is associated with
+  user_id = ndb.IntegerProperty()
+  signup_time = ndb.DateTimeProperty(auto_now_add=True)
+
+# Class Name: User
+# Description: This class describes the User in the friend datastore
+
+class User(EndpointsModel):
+  _message_fields_schema = ('id', 'user_name', 'user_password')
+
+  # id field is defined in the base ndb.Model
+  user_name = ndb.StringProperty()
+  user_password = ndb.StringProperty()
+
+# Class Name: Login
+# Description: This class describes if any User is Logged in to the datastore
+
+class Login(EndpointsModel):
+  _message_fields_schema = ('id', 'user_cname', 'user_cpassword', 'user_login_id', 'user_logged_in')
+
+  # id field is defined in the base ndb.Model
+  user_cname = ndb.StringProperty()
+  user_cpassword = ndb.StringProperty()
+  user_login_id = ndb.IntegerProperty()
+  user_logged_in = ndb.IntegerProperty()
+
+# Class Name: FriendFinderApi
+# Description: This class describes the friend api using gae endpoints

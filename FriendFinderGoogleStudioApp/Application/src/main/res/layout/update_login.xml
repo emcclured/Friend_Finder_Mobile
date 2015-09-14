@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/updateNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffff5f69"
+        android:capitalize="none" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateNameEditText"
+        android:autoText="false"
+        android:background="#fff2dbff"
+        android:layout_weight="0.08"
+        android:height="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/updatePasswordTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffff5f69" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatePasswordEditText"
+        android:background="#fff2dbff"
+        android:layout_weight="0.08"
+        android:height="35dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffff5f69"
+        android:layout_marginTop="15dp"
+        android:height="20dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:textAlignment="center"
+        android:height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff7f7f7" />
+</LinearLayout>

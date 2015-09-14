@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/loginNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffff5f69" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginNameEditText"
+        android:width="190dp"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignRight="@+id/IdEditText"
+        android:layout_alignEnd="@+id/IdEditText"
+        android:layout_marginTop="0dp"
+        android:background="#fff2dbff"
+        android:height="35dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/loginPasswordTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffff5f69" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginPasswordEditText"
+        android:width="190dp"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignRight="@+id/IdEditText"
+        android:layout_alignEnd="@+id/IdEditText"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:height="35dp"
+        android:background="#fff2dbff"
+        android:layout_weight="0.04" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:background="#ffff5f69"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New User"
+        android:id="@+id/createNewUserButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:background="#ffff5f69"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Exit Friend Finder"
+        android:id="@+id/exitAppButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_gravity="right"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:background="#fff7f7f7" />
+
+</LinearLayout>

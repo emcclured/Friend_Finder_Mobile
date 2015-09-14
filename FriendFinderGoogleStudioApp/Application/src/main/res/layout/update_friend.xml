@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/uCustomerLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbname"
+            android:id="@+id/utextView3"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uNameEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/utextView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_toRightOf="@+id/utextView7"
+            android:layout_toEndOf="@+id/utextView7"
+            android:background="#fff2dbff"
+            android:height="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbemail"
+            android:id="@+id/utextView5"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/utextView3"
+            android:layout_alignLeft="@+id/utextView3"
+            android:layout_alignStart="@+id/utextView3"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uEmailEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/utextView5"
+            android:layout_alignLeft="@+id/uNameEditText"
+            android:layout_alignStart="@+id/uNameEditText"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/uNameEditText"
+            android:layout_alignEnd="@+id/uNameEditText"
+            android:background="#fff2dbff"
+            android:height="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbaddress"
+            android:id="@+id/utextView7"
+            android:layout_below="@+id/utextView5"
+            android:layout_alignLeft="@+id/utextView5"
+            android:layout_alignStart="@+id/utextView5"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uAddressEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/utextView7"
+            android:layout_alignLeft="@+id/uNameEditText"
+            android:layout_alignStart="@+id/uNameEditText"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/uEmailEditText"
+            android:layout_alignEnd="@+id/uEmailEditText"
+            android:background="#fff2dbff"
+            android:height="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:id="@+id/utextView9"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/utextView7"
+            android:layout_alignLeft="@+id/utextView7"
+            android:layout_alignStart="@+id/utextView7"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uPhoneEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/utextView9"
+            android:layout_alignLeft="@+id/uAddressEditText"
+            android:layout_alignStart="@+id/uAddressEditText"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/uAddressEditText"
+            android:layout_alignEnd="@+id/uAddressEditText"
+            android:background="#fff2dbff"
+            android:height="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uFriendResultText"
+            android:height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ubutton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Friend"
+            android:id="@+id/ubutton"
+            android:layout_gravity="bottom"
+            android:layout_below="@+id/uPhoneEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/uToMain"
+            android:layout_alignEnd="@+id/uToMain"
+            android:background="#ffff5f69"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Friend"
+            android:id="@+id/uDeleteFriend"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/uToMain"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:background="#fff7f7f7"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back To Main"
+            android:id="@+id/uToMain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/uPhoneEditText"
+            android:layout_alignEnd="@+id/uPhoneEditText"
+            android:layout_gravity="bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fff7f7f7"
+            android:textColor="#ffff5f69" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:id="@+id/utextView2"
+            android:textSize="16dp"
+            android:layout_below="@+id/uFriendResultText"
+            android:layout_alignLeft="@+id/utextView9"
+            android:textColor="#ffff5f69"
+            android:layout_alignRight="@+id/utextView5"
+            android:layout_alignEnd="@+id/utextView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uidText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:selectAllOnFocus="false"
+            android:layout_below="@+id/uFriendResultText"
+            android:layout_alignLeft="@+id/uNameEditText"
+            android:background="#fff2dbff"
+            android:autoText="false"
+            android:height="35dp"
+            android:layout_alignBottom="@+id/utextView2"
+            android:layout_alignRight="@+id/uPhoneEditText"
+            android:layout_alignEnd="@+id/uPhoneEditText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CustomerLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbname"
+            android:id="@+id/textView3"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7"
+            android:background="#fff2dbff"
+            android:height="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbemail"
+            android:id="@+id/textView5"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignLeft="@+id/NameEditText"
+            android:layout_alignStart="@+id/NameEditText"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/NameEditText"
+            android:layout_alignEnd="@+id/NameEditText"
+            android:height="35dp"
+            android:background="#fff2dbff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbaddress"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AddressEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_alignLeft="@+id/NameEditText"
+            android:layout_alignStart="@+id/NameEditText"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/EmailEditText"
+            android:layout_alignEnd="@+id/EmailEditText"
+            android:height="35dp"
+            android:background="#fff2dbff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:id="@+id/textView9"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PhoneEditText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignLeft="@+id/AddressEditText"
+            android:layout_alignStart="@+id/AddressEditText"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/AddressEditText"
+            android:layout_alignEnd="@+id/AddressEditText"
+            android:height="35dp"
+            android:background="#fff2dbff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FriendResultText"
+            android:height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/addFriendButton"
+            android:layout_below="@+id/newFriendIdText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Friend"
+            android:id="@+id/addFriendButton"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/ToMain"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#ffff5f69"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back To Main"
+            android:id="@+id/ToMain"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#fff7f7f7"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:id="@+id/textView2"
+            android:textSize="16dp"
+            android:textColor="#ffff5f69"
+            android:layout_below="@+id/PhoneEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_alignEnd="@+id/textView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newFriendIdText"
+            android:width="50dp"
+            android:editable="true"
+            android:enabled="true"
+            android:background="#fff2dbff"
+            android:height="35dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignLeft="@+id/PhoneEditText"
+            android:layout_alignStart="@+id/PhoneEditText"
+            android:layout_alignRight="@+id/PhoneEditText"
+            android:layout_alignEnd="@+id/PhoneEditText"
+            android:layout_marginTop="0dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

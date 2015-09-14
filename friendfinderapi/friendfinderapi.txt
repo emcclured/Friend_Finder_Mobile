@@ -1,0 +1,105 @@
+Friend Finder api
+
+live API at the following address:
+
+https://assignment5-1030.appspot.com/_ah/api/friendfinderapi/v1/
+
+API Descriptions
+-------------------
+
+create new friend
+
+POST http://localhost:8080/_ah/api/friendfinderapi/v1/friend/insert/{id, email, name, address, phone_number, user_id}
+
+example:
+
+curl --header "Content-Type: application/json" -X POST -d '{"id": "1", "email": "berry@live.com", "name": "berry", "address": "101 Fabulous", "phone_number": "555-555-5555", "user_id": "1"}' http://localhost:8080/_ah/api/friendfinderapi/v1/friend/insert
+
+get friend by id
+
+GET http://localhost:8080/_ah/api/friendfinderapi/v1/friend/retrieve/{id}
+
+example:
+
+curl --header "Content-Type: application/json" -X GET http://localhost:8080/_ah/api/friendfinderapi/v1/friend/retrieve/1
+
+update friend information
+
+PUT http://localhost:8080/_ah/api/friendfinderapi/v1/friend/update/{email, name, address, phone_number, user_id, id}
+
+example:
+
+curl --header "Content-Type: application/json" -X PUT -d '{"email": "berry@gmail.com", "name": "berrylicious", "address": "101 Fabulous", "phone_number": "555-555-5555", "user_id": "1", "id": "1"}' http://localhost:8080/_ah/api/friendfinderapi/v1/friend/update
+
+delete friend by id
+
+DELETE http://localhost:8080/_ah/api/friendfinderapi/v1/friend/delete/{id}
+
+example:
+
+curl -X DELETE http://localhost:8080/_ah/api/friendfinderapi/v1/friend/delete/1
+
+list all friends
+
+http://localhost:8080/_ah/api/friendfinderapi/v1/friends/list
+
+example:
+
+curl http://localhost:8080/_ah/api/friendfinderapi/v1/friends/list
+
+create new user
+
+POST http://localhost:8080/_ah/api/friendfinderapi/v1/user/insert/{id, user_name, user_password}
+
+example:
+
+curl --header "Content-Type: application/json" -X POST -d '{"id": "1", "user_name": "todd", "user_password": "todd"}' http://localhost:8080/_ah/api/friendfinderapi/v1/user/insert
+
+get user by id
+
+GET http://localhost:8080/_ah/api/friendfinderapi/v1/user/retrieve/{id}
+
+example:
+
+curl --header "Content-Type: application/json" -X GET http://localhost:8080/_ah/api/friendfinderapi/v1/user/retrieve/1
+
+update user information
+
+PUT http://localhost:8080/_ah/api/friendfinderapi/v1/user/update/{id, user_name, user_password}
+
+example:
+
+curl --header "Content-Type: application/json" -X PUT -d '{"id": "1", "user_name": "todd", "user_password": "todd"}' http://localhost:8080/_ah/api/friendfinderapi/v1/user/update
+
+delete user by id
+
+DELETE http://localhost:8080/_ah/api/friendfinderapi/v1/user/delete/{id}
+
+example:
+
+curl -X DELETE http://localhost:8080/_ah/api/friendfinderapi/v1/user/delete/1
+
+list all users
+
+http://localhost:8080/_ah/api/friendfinderapi/v1/users/list
+
+example:
+
+curl http://localhost:8080/_ah/api/friendfinderapi/v1/users/list
+
+login
+
+PUT http://localhost:8080/_ah/api/friendfinderapi/v1/user/login/login/{id, user_cname, user_cpassword"}
+
+example:
+
+curl --header "Content-Type: application/json" -X PUT -d '{"id": "1", "user_cname": "tom", "user_cpassword": "tom"}'  http://localhost:8080/_ah/api/friendfinderapi/v1/login/login
+
+logout
+
+PUT http://localhost:8080/_ah/api/friendfinderapi/v1/user/login/logout/{id}
+
+example:
+
+curl --header "Content-Type: application/json" -X PUT -d '{"id": "1"}'  http://localhost:8080/_ah/api/friendfinderapi/v1/login/logout
+
